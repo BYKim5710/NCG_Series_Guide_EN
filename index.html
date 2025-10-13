@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NCG Series – English Guide</title>
 
   <!-- Open Graph & Meta -->
   <meta property="og:title" content="NCG Series – English Guide" />
-  <meta property="og:description" content="Explore the Religious Revolution Series by Byung Youn Kim, Chairman of the New Consilience Group (NCG)" />
+  <meta property="og:description" content="Explore the Religious Revolution Series by Byung Youn Kim, Chairman of the New Consilience Group (NCG)." />
   <meta property="og:image" content="https://bykim5710.github.io/series/ep.01-enor.png" />
   <meta property="og:url" content="https://bykim5710.github.io/github.io-NCG_Series_Guide_EN/" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -21,6 +21,8 @@
       --border: #d0d7de;
     }
 
+    * { box-sizing: border-box; }
+
     body {
       font-family: "Segoe UI", Arial, sans-serif;
       background: var(--bg);
@@ -30,18 +32,30 @@
       line-height: 1.6;
     }
 
+    /* Top Nav */
+    .topnav {
+      position: sticky; top: 0; z-index: 50;
+      background: #0b3a9c; color: #fff;
+    }
+    .topnav-inner {
+      max-width: 980px; margin: 0 auto;
+      display: flex; gap: 12px; align-items: center; justify-content: space-between;
+      padding: 10px 14px;
+    }
+    .topnav a {
+      text-decoration: none; font-weight: 700; border-radius: 8px;
+      padding: 8px 12px; display: inline-block;
+    }
+    .topnav a.main { background: #ffffff22; color: #fff; font-weight: 600; }
+    .topnav a.kr   { background: #fff; color: #0b3a9c; }
+
     header {
       background: var(--accent);
       color: white;
       padding: 1.5rem 1rem;
       text-align: center;
     }
-
-    header h1 {
-      margin: 0;
-      font-size: 1.6rem;
-      letter-spacing: 0.5px;
-    }
+    header h1 { margin: 0; font-size: 1.6rem; letter-spacing: 0.5px; }
 
     main {
       max-width: 850px;
@@ -56,43 +70,27 @@
       border-bottom: 2px solid var(--border);
       padding-bottom: 0.4rem;
       color: var(--accent);
+      margin-top: 1.4rem;
     }
 
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
+    ul { list-style: none; padding: 0; margin: 0; }
     li {
-      padding: 0.4rem 0;
+      padding: 0.45rem 0;
       border-bottom: 1px solid var(--border);
     }
+    li:last-child { border-bottom: none; }
 
-    li:last-child {
-      border-bottom: none;
-    }
+    a { text-decoration: none; color: var(--accent); font-weight: 500; }
+    a:hover { text-decoration: underline; }
 
-    a {
-      text-decoration: none;
-      color: var(--accent);
-      font-weight: 500;
-    }
-
-    a:hover {
-      text-decoration: underline;
+    .center { text-align: center; }
+    .btn {
+      display: inline-block; background-color: #003399; color: #fff;
+      padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: 600;
     }
 
     footer {
-      text-align: center;
-      margin: 3rem 0 1rem 0;
-      color: #666;
-      font-size: 0.9rem;
-    }
-
-    .flag {
-      width: 26px;
-      vertical-align: middle;
-      margin-right: 8px;
+      text-align: center; margin: 2.2rem 0 1.2rem 0; color: #666; font-size: 0.9rem;
     }
 
     @media (max-width: 600px) {
@@ -100,7 +98,20 @@
     }
   </style>
 </head>
+
 <body>
+  <!-- === Top Nav / Language Switch === -->
+  <div class="topnav">
+    <div class="topnav-inner">
+      <div style="font-weight:700;">NCG Series – English Guide</div>
+      <div style="display:flex; gap:10px;">
+        <a class="main" href="https://bykim5710.github.io/series/" target="_blank" rel="noopener">▶ Main Series (EN)</a>
+        <a class="kr"   href="https://bykim5710.github.io/github.io-NCG_Series_Guide_KR/" target="_blank" rel="noopener">🇰🇷 View Korean Guide</a>
+      </div>
+    </div>
+  </div>
+  <!-- === /Top Nav === -->
+
   <header>
     <h1>🇺🇸 NCG Series – English Guide</h1>
   </header>
@@ -115,48 +126,34 @@
 
     <h2>🎬 English Video Series</h2>
     <ul>
-      <li>Ep.01 – <strong>Introduction of BY Kim and NCG</strong>  
-        → <a href="https://youtu.be/xqgxrhM1r24" target="_blank">▶ Watch on YouTube</a></li>
-
-      <li>Ep.02 – <strong>The Necessity of Religious Revolution</strong>  
-        → <a href="https://youtu.be/ZObT0sdpb2s" target="_blank">▶ Watch on YouTube</a></li>
-
-      <li>Ep.05 – <strong>The Origin of Religions</strong>  
-        → <a href="https://youtu.be/nWhG4_U4I7U" target="_blank">▶ Watch on YouTube</a></li>
-
-      <li>Ep.15 – <strong>The Exodus of Moses Never Happened</strong>  
-        → <a href="https://youtu.be/7tGGKBsqghk" target="_blank">▶ Watch on YouTube</a></li>
-
-      <li>Ep.16 – <strong>The Illusion of David and Solomon’s Empire</strong>  
-        → <a href="https://youtu.be/hPeLXPMlhA4" target="_blank">▶ Watch on YouTube</a></li>
+      <li>Ep.01 – <strong>Introduction of BY Kim and NCG</strong> → <a href="https://youtu.be/xqgxrhM1r24" target="_blank">▶ Watch on YouTube</a></li>
+      <li>Ep.02 – <strong>The Necessity of Religious Revolution</strong> → <a href="https://youtu.be/ZObT0sdpb2s" target="_blank">▶ Watch on YouTube</a></li>
+      <li>Ep.05 – <strong>The Origin of Religions</strong> → <a href="https://youtu.be/nWhG4_U4I7U" target="_blank">▶ Watch on YouTube</a></li>
+      <li>Ep.15 – <strong>The Exodus of Moses Never Happened</strong> → <a href="https://youtu.be/7tGGKBsqghk" target="_blank">▶ Watch on YouTube</a></li>
+      <li>Ep.16 – <strong>The Illusion of David and Solomon’s Empire</strong> → <a href="https://youtu.be/hPeLXPMlhA4" target="_blank">▶ Watch on YouTube</a></li>
     </ul>
 
-   h2>📄 English PDF Documents</h2>
-<ul>
-  <li><a href="https://bykim5710.github.io/series/00.pdf" target="_blank">00. Table of Contents & Profile</a></li>
-  <li><a href="https://bykim5710.github.io/series/01-1.pdf" target="_blank">01-1. Introduction of BY Kim and NCG</a></li>
-  <li><a href="https://bykim5710.github.io/series/02.pdf" target="_blank">02. Necessity of Religious Revolution</a></li>
-  <li><a href="https://bykim5710.github.io/series/05.pdf" target="_blank">05. The Origin of Religions</a></li>
-  <li><a href="https://bykim5710.github.io/series/15.pdf" target="_blank">15. The Exodus of Moses Never Happened</a></li>
-  <li><a href="https://bykim5710.github.io/series/16.pdf" target="_blank">16. The Illusion of David and Solomon’s Empire</a></li>
-</ul>
+    <h2>📄 English PDF Documents</h2>
+    <ul>
+      <li><a href="https://bykim5710.github.io/series/00.pdf" target="_blank">00. Table of Contents &amp; Profile</a></li>
+      <li><a href="https://bykim5710.github.io/series/01-1.pdf" target="_blank">01-1. Introduction of BY Kim and NCG</a></li>
+      <li><a href="https://bykim5710.github.io/series/02.pdf" target="_blank">02. Necessity of Religious Revolution</a></li>
+      <li><a href="https://bykim5710.github.io/series/05.pdf" target="_blank">05. The Origin of Religions</a></li>
+      <li><a href="https://bykim5710.github.io/series/15.pdf" target="_blank">15. The Exodus of Moses Never Happened</a></li>
+      <li><a href="https://bykim5710.github.io/series/16.pdf" target="_blank">16. The Illusion of David and Solomon’s Empire</a></li>
+    </ul>
 
-<!-- ✅ Korean Version Section -->
-<h2>🌍 Korean Version</h2>
-<div style="text-align: center; margin-top: 1rem;">
-  <a href="https://bykim5710.github.io/github.io-NCG_Series_Guide_KR/" target="_blank"
-     style="display: inline-block; background-color: #003399; color: white;
-            padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: 600;">
-    🇰🇷 View Korean Guide
-  </a>
-</div>
-<p style="text-align:center; margin-top:0.5rem; color:#555;">
-  Visit the Korean version of this site to explore the NCG Series in Hangul.
-</p>
+    <h2>🌍 Korean Version</h2>
+    <div class="center" style="margin-top:1rem;">
+      <a class="btn" href="https://bykim5710.github.io/github.io-NCG_Series_Guide_KR/" target="_blank" rel="noopener">🇰🇷 View Korean Guide</a>
+    </div>
+    <p class="center" style="margin-top:0.5rem; color:#555;">
+      Visit the Korean version of this site to explore the NCG Series in Hangul.
+    </p>
+  </main>
 
-<footer>
-  © 2025 Byung Youn Kim · New Consilience Group (NCG)
-</footer>
+  <footer>
+    © 2025 Byung Youn Kim · New Consilience Group (NCG)
+  </footer>
 </body>
 </html>
-
