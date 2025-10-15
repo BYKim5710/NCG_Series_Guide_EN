@@ -1,4 +1,4 @@
-!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -11,13 +11,14 @@
   <meta property="og:site_name" content="NCG Series – English Guide" />
   <meta property="og:title" content="NCG Series — English Guide (Ep.01–16)" />
   <meta property="og:description" content="Index of English materials for the NCG Series: press kits, reviews, video links, and PDFs." />
-  <meta property="og:url" content=".github.io/NCG_Series_Guide_EN/guide.html" />
-  <meta property="og:image" content=".github.io/NCG_Series_Guide_EN/og-default.jpg" />
+  <meta property="og:url" content="https://bykim5710.github.io/NCG_Series_Guide_EN/guide.html" />
+  <meta property="og:image" content="https://bykim5710.github.io/NCG_Series_Guide_EN/og-default.jpg" />
+  
+  <meta name="twitter:image" content="https://bykim5710.github.io/NCG_Series_Guide_EN/og-default.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content=".github.io/NCG_Series_Guide_EN/og-default.jpg" />
-
+  <meta name="description" content="Index of English materials for the NCG Series: press kits, reviews, video links, and PDFs.">
   <style>
     :root{
       --bg:#0d1117; --panel:#0f172a; --text:#e6edf3; --muted:#a3b3c4;
@@ -74,28 +75,17 @@
 
   <div class="wrap">
 
-    <!-- Press Materials (EN: Trilogy only) -->
-   section class="card" id="press">
-  <div class="title">Press Materials</div>
-  <p class="lead">English press kit is provided as a single trilogy. On mobile, use “Open directly”.</p>
-
+   <!-- Press Materials -->
+<section class="card" id="press">
+  
   <ul class="clean">
     <li class="item">
-  <span class="title">NCG Press Trilogy (EN)</span>
+      <span class="title">NCG Press Trilogy (EN)</span>
 
- <a id="trilogyLink"
-   class="btn"
-   href="./religious-revolution-trilogy_en.pdf"S
-   target="_blank"
-   rel="noopener">
-  Author’s Trilogy & Profile
-</a>
-
-  <p class="note">
-    On iPhone/Android, your browser may try to download the PDF.
-    If that happens, choose “Open in browser / Open directly” to view it.
-  </p>
-</li>
+      <a id="trilogyLink" class="btn" href="./religious-revolution-trilogy_en.pdf" target="_blank" rel="noopener">
+        Author’s Trilogy & Profile
+      </a>
+    </li>
   </ul>
 </section>
 
@@ -103,13 +93,12 @@
 <span id="endorsements"></span>  <!-- 예전 링크 호환용, 눈에 보이지 않음 -->
 <section class="card" id="reviews">
   <div class="title">Reviews</div>
-  <p class="lead">Selected excerpts. Full reviews (PDF) can be opened below.</p>
-
+ 
   <div style="margin:10px 0">
     <b>Soul &amp; Zero — Excerpt</b><br>
     “The author is fearless in dealing with religious themes and offers an unflinching perspective.”
     <div class="btn-row" style="margin-top:8px">
-      <a class="btn" href="./soul-and-zero-review_en.pdf" target="_blank" rel="noopener">Read full review (PDF)</a>
+    <a id="reviewSzn" class="btn" href="./soul-and-zero-review_en.pdf" target="_blank" rel="noopener"> Read full review (PDF)</a>
     </div>
   </div>
 
@@ -117,7 +106,7 @@
     <b>Conversation with Oneness God — Excerpt</b><br>
     “With the diligence of someone who read <i>Das Kapital</i>, the author analyzes the Bible with ardor.”
     <div class="btn-row" style="margin-top:8px">
-      <a class="btn" href="./oneness-god-review_en.pdf" target="_blank" rel="noopener">Read full review (PDF)</a>
+    <a id="reviewOneness" class="btn" href="./oneness-god-review_en.pdf" target="_blank" rel="noopener"> Read full review (PDF)</a>
     </div>
   </div>
 </section>
@@ -201,26 +190,30 @@
       `${d.getFullYear()}-${z(d.getMonth()+1)}-${z(d.getDate())}`;
   </script>
  
-  <script>
+<script>
 (function () {
   var isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
   if (!isMobile) return;
 
-  var a = document.getElementById('trilogyLink');
-  if (!a) return;
-  // 현재 href(상대경로)를 절대 URL로
-  var pdfPath = a.getAttribute('href');
-  var absolutePdfUrl = new URL(pdfPath, location.href).href;
+  // 모바일은 PDF를 다운로드 대신 브라우저 뷰어(PDF.js)로 열기
+  ['trilogyLink', 'reviewSzn', 'reviewOneness'].forEach(function (id) {
+    var a = document.getElementById(id);
+    if (!a) return;
 
-  // 모바일은 뷰어로 열기
-  var viewerUrl =
-    'https://drive.google.com/viewerng/viewer?embedded=1&url=' +
-    encodeURIComponent(absolutePdfUrl);
+    // 상대경로 → 절대경로
+    var abs = new URL(a.getAttribute('href'), location.href).href;
 
-  a.setAttribute('href', viewerUrl);
-  a.setAttribute('target', '_blank');
-  a.removeAttribute('download'); // 혹시 있을지 모를 강제 다운로드 방지
+    // Mozilla PDF.js 뷰어 URL
+    var viewer = 'https://mozilla.github.io/pdf.js/web/viewer.html?file=' +
+                 encodeURIComponent(abs);
+
+    // 링크를 뷰어로 교체
+    a.setAttribute('href', viewer);
+    a.setAttribute('target', '_self');   // 같은 탭에서 열기(전환 안정적)
+    a.removeAttribute('download');       // 혹시 있을 강제 다운로드 방지
+  });
 })();
-</script>  
+</script>
+  
 </body>
 </html>
