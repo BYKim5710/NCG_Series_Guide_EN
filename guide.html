@@ -55,6 +55,13 @@
     .lang-switch a{padding:6px 12px; border-radius:8px; border:1px solid var(--border); background:#0b1020}
     .lang-switch a.active{background:#0b2c6f; color:#fff; border-color:#264f99}
     @media (max-width:560px){ .right{float:none; display:block; margin-top:6px} }
+  
+    /* ——— PDF 버튼 아래 안내문(회색) ——— */
+    .note { margin:14px 0; color:var(--muted); }
+
+   /* (선택) PDF 버튼 묶음 레이아웃 보완 */
+    .pdfs { display:flex; flex-wrap:wrap; gap:8px; margin-top:8px; }
+    .pdfs .btn { display:inline-block; }
   </style>
 </head>
 <body>
@@ -77,6 +84,10 @@
       <span class="title">NCG Press Trilogy (EN)</span>
       <a class="btn" href="./religious-revolution-trilogy_en.pdf" target="_blank" rel="noopener">
         Author's Trilogy & Profile
+ <p class="note">
+     On iPhone/Android, your browser may try to download the PDF.
+     If that happens, choose “Open in browser / Open directly” to view it.
+</p>       
       </a>
       </li>
   </ul>
