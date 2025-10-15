@@ -81,15 +81,21 @@
 
   <ul class="clean">
     <li class="item">
-      <span class="title">NCG Press Trilogy (EN)</span>
-      <a class="btn" href="./religious-revolution-trilogy_en.pdf" target="_blank" rel="noopener">
-        Author's Trilogy & Profile
- <p class="note">
-     On iPhone/Android, your browser may try to download the PDF.
-     If that happens, choose “Open in browser / Open directly” to view it.
-</p>       
-      </a>
-      </li>
+  <span class="title">NCG Press Trilogy (EN)</span>
+
+ <a id="trilogyLink"
+   class="btn"
+   href="./religious-revolution-trilogy_en.pdf"S
+   target="_blank"
+   rel="noopener">
+  Author’s Trilogy & Profile
+</a>
+
+  <p class="note">
+    On iPhone/Android, your browser may try to download the PDF.
+    If that happens, choose “Open in browser / Open directly” to view it.
+  </p>
+</li>
   </ul>
 </section>
 
@@ -194,5 +200,27 @@
     document.getElementById('ts').textContent =
       `${d.getFullYear()}-${z(d.getMonth()+1)}-${z(d.getDate())}`;
   </script>
+ 
+  <script>
+(function () {
+  var isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  if (!isMobile) return;
+
+  var a = document.getElementById('trilogyLink');
+  if (!a) return;
+  // 현재 href(상대경로)를 절대 URL로
+  var pdfPath = a.getAttribute('href');
+  var absolutePdfUrl = new URL(pdfPath, location.href).href;
+
+  // 모바일은 뷰어로 열기
+  var viewerUrl =
+    'https://drive.google.com/viewerng/viewer?embedded=1&url=' +
+    encodeURIComponent(absolutePdfUrl);
+
+  a.setAttribute('href', viewerUrl);
+  a.setAttribute('target', '_blank');
+  a.removeAttribute('download'); // 혹시 있을지 모를 강제 다운로드 방지
+})();
+</script>  
 </body>
 </html>
