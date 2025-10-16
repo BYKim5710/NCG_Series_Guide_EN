@@ -1,104 +1,219 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>YouTube Videos & “Conversation with Oneness God” Series</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<!-- Basic SEO / Open Graph -->
-<meta name="description" content="Choose a tab to view English/Korean videos, the full YouTube channel, and the English PDF series for Conversation with Oneness God." />
-<meta property="og:type" content="website" />
-<meta property="og:title" content='YouTube Videos & “Conversation with Oneness God” Series' />
-<meta property="og:description" content="Tabs for English/Korean videos, full channel, and the English PDF series." />
-<meta property="og:url" content="https://bykim5710.github.io/series/" />
+  <title>NCG Series — English Guide (Ep.01–16)</title>
 
-<style>
-  :root{
-    --bg:#0d1117; --panel:#0f172a; --text:#e6edf3; --muted:#9bb0c6;
-    --pill:#15213a; --pillActive:#1e2b48; --accent:#2b6cb0; --accentHover:#2c5282;
-    --badge:#0b2042; --link:#9cc6ff;
-  }
-  *{box-sizing:border-box}
-  html,body{margin:0; padding:0; background:var(--bg); color:var(--text);
-    font-family:"Segoe UI", Arial, system-ui, -apple-system, Roboto, Helvetica, sans-serif; line-height:1.6}
-  .wrap{max-width:980px; margin:28px auto; padding:0 16px}
+  <!-- Open Graph / SEO (edit placeholders as needed) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="NCG Series – English Guide" />
+  <meta property="og:title" content="NCG Series — English Guide (Ep.01–16)" />
+  <meta property="og:description" content="Index of English materials for the NCG Series: press kits, reviews, video links, and PDFs." />
+  <meta property="og:url" content="https://bykim5710.github.io/NCG_Series_Guide_EN/guide.html" />
+  <meta property="og:image" content="https://bykim5710.github.io/NCG_Series_Guide_EN/og-default.jpg" />
+  
+  <meta name="twitter:image" content="https://bykim5710.github.io/NCG_Series_Guide_EN/og-default.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="description" content="Index of English materials for the NCG Series: press kits, reviews, video links, and PDFs.">
+  <style>
+    :root{
+      --bg:#0d1117; --panel:#0f172a; --text:#e6edf3; --muted:#a3b3c4;
+      --accent:#3b82f6; --btn:#2563eb; --border:#1e293b; --ok:#22c55e; --warn:#eab308;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0; padding:0; background:var(--bg); color:var(--text);
+      font-family: "Segoe UI", Arial, system-ui, -apple-system, Roboto, Helvetica, sans-serif;
+      line-height:1.6}
+    .wrap{max-width:980px; margin:28px auto; padding:0 16px}
+    header{background:var(--accent); color:#fff; padding:22px 0; text-align:center}
+    header h1{margin:0; font-size:clamp(20px, 3.2vw, 28px)}
+    header small{display:block; margin-top:6px; opacity:.95}
 
-  header{padding:28px 0 14px}
-  header h1{margin:0 0 8px; font-size:clamp(22px,3.2vw,32px); font-weight:800}
-  header p.lead{margin:0; color:var(--muted)}
+    section.card{background:var(--panel); border-radius:12px; padding:20px;
+      margin-top:22px; box-shadow:0 2px 6px rgba(0,0,0,.35); border:1px solid var(--border)}
+    .lead{color:var(--muted); margin:12px 0 4px 0}
+    .title{font-weight:700; margin-bottom:8px}
 
-  /* Big CTA (Series Guide) — KR 스타일 매칭 */
-  .hero-cta{ margin:22px 0 28px; text-align:center; }
-  .btn-cta{
-    display:inline-block; padding:12px 22px; border-radius:10px;
-    background:var(--accent); color:#fff; font-weight:700; font-size:1.05rem;
-    text-decoration:none; box-shadow:0 4px 14px rgba(0,0,0,.15);
-    transition:background .2s;
-  }
-  .btn-cta:hover{ background:var(--accentHover); }
-  .cta-sub{ margin-top:8px; font-size:.95rem; color:#b7c7e6; }
+    a{color:#93c5fd; text-decoration:none}
+    a:hover{text-decoration:underline}
+    .btn{display:inline-block; padding:12px 18px; background:var(--btn); color:#fff;
+      border-radius:10px; text-decoration:none; font-weight:700}
+    .btn:hover{filter:brightness(1.05)}
+    .btn-row{display:flex; flex-wrap:wrap; gap:10px}
 
-  /* Pills (탭) */
-  .pills{ display:flex; flex-wrap:wrap; gap:12px; margin:18px 0 12px; }
-  .pill{
-    display:inline-flex; align-items:center; gap:10px;
-    padding:10px 16px; border-radius:12px; background:var(--pill);
-    color:#d6e4ff; text-decoration:none; font-weight:600; border:1px solid #1b2641;
-  }
-  .pill:hover{ background:var(--pillActive); }
-  .pill .flag{ font-weight:700; opacity:.95; }
-  .pill .icon{ opacity:.85; }
+    ul.clean{padding-left:18px; margin:10px 0}
+    ul.clean li{margin:6px 0}
 
-  footer{ margin:32px 0 24px; color:var(--muted); text-align:right; font-size:.95rem; }
-  a{ color:var(--link); }
-</style>
+    footer{margin:36px 0 24px; text-align:center; color:var(--muted)}
+    .right{float:right; color:var(--muted)}
+    .badge{display:inline-block; padding:6px 10px; border-radius:8px; background:#0b2042; color:#cfe2ff; font-weight:600}
+
+    .lang-switch{display:flex; gap:10px; justify-content:flex-end; align-items:center; margin:10px 0}
+    .lang-switch a{padding:6px 12px; border-radius:8px; border:1px solid var(--border); background:#0b1020}
+    .lang-switch a.active{background:#0b2c6f; color:#fff; border-color:#264f99}
+    @media (max-width:560px){ .right{float:none; display:block; margin-top:6px} }
+  
+    /* ——— PDF 버튼 아래 안내문(회색) ——— */
+    .note { margin:14px 0; color:var(--muted); }
+
+   /* (선택) PDF 버튼 묶음 레이아웃 보완 */
+    .pdfs { display:flex; flex-wrap:wrap; gap:8px; margin-top:8px; }
+    .pdfs .btn { display:inline-block; }
+  </style>
 </head>
-
 <body>
+  <header>
+    <div class="wrap">
+      <h1>NCG Series — English Guide <span class="badge">(Batch 1-7)</span></h1>
+      <small>BY Kim · New Consilience Group (NCG)</small>
+    </div>
+  </header>
+
   <div class="wrap">
-    <header>
-      <h1>YouTube Videos & “Conversation with Oneness God” Series</h1>
-      <p class="lead">Choose a tab below. Only the selected content will be shown.</p>
 
-      <!-- ✅ 큰 파란 CTA (한글 페이지와 동일한 위계) -->
-      <div class="hero-cta">
-        <a class="btn-cta" href="https://bykim5710.github.io/NCG_Series_Guide_EN/guide.html">
-          📘 View Series Guide
-        </a>
-        <div class="cta-sub">See the full English guide to videos, PDFs, and press materials.</div>
-      </div>
-    </header>
+   <!-- Press Materials -->
+<section class="card" id="press">
+  
+  <ul class="clean">
+    <li class="item">
+      <span class="title">NCG Press Trilogy (EN)</span>
 
-    <!-- 탭(Pills) -->
-    <nav class="pills">
-      <a class="pill" href="./?tab=en">
-        <span class="flag">US</span> English Videos
+      <a id="trilogyLink" class="btn" href="./religious-revolution-trilogy_en.pdf" target="_blank" rel="noopener">
+        Author’s Trilogy & Profile
       </a>
-      <a class="pill" href="./?tab=kr">
-        <span class="flag">KR</span> 한국어 영상
-      </a>
-      <a class="pill" href="https://www.youtube.com/@BYKIM-c2s" target="_blank" rel="noopener">
-        <span class="icon">📺</span> Full YouTube Channel (@BYKIM-c2s)
-      </a>
-      <!-- (영문 PDF 시리즈로 이동) -->
-      <a class="pill" href="./?tab=pdf">
-        <span class="icon">📄</span> Conversation with Oneness God — English PDF Series
-      </a>
-    </nav>
+    </li>
+  </ul>
+</section>
 
-    <!-- 탭 선택 안내(정적 안내 문구 유지) -->
-    <p class="lead" style="margin-top:6px;">Only the selected content will be shown.</p>
+    <!-- Reviews -->
+<span id="endorsements"></span>  <!-- 예전 링크 호환용, 눈에 보이지 않음 -->
+<section class="card" id="reviews">
+  <div class="title">Reviews</div>
+ 
+  <div style="margin:10px 0">
+    <b>Soul &amp; Zero — Excerpt</b><br>
+    “The author is fearless in dealing with religious themes and offers an unflinching perspective.”
+    <div class="btn-row" style="margin-top:8px">
+    <a id="reviewSzn" class="btn" href="./soul-and-zero-review_en.pdf" target="_blank" rel="noopener"> Read full review (PDF)</a>
+    </div>
+  </div>
 
+  <div style="margin:14px 0">
+    <b>Conversation with Oneness God — Excerpt</b><br>
+    “With the diligence of someone who read <i>Das Kapital</i>, the author analyzes the Bible with ardor.”
+    <div class="btn-row" style="margin-top:8px">
+    <a id="reviewOneness" class="btn" href="./oneness-god-review_en.pdf" target="_blank" rel="noopener"> Read full review (PDF)</a>
+    </div>
+  </div>
+</section>
+
+ <!-- Batch Guide -->
+<section class="card" id="batches">
+  <h2>🗂️ Batch Guide (Ep.01–16)</h2>
+  <p class="lead">Seven curated batches for ads and sharing.</p>
+
+  <ul class="clean">
+
+    <!-- Batch 1 -->
+    <li class="item">
+      <span class="title">Batch 1 — Author’s Books & NCG Intro (Ep.01 + PDFs 00/01)</span>
+      — <a href="https://youtu.be/xqgxrhM1r24" target="_blank" rel="noopener"><!-- TODO: Ep.01 URL -->Ep.01</a>
+    </li>
+
+    <!-- Batch 2 -->
+    <li class="item">
+      <span class="title">Batch 2 — Why do we need Religious Revolution? (Ep.02–04)</span>
+      — <a href="https://youtu.be/IniMUGC3T9Q" target="_blank" rel="noopener"><!-- TODO: Ep.02 URL -->Ep.02</a>
+      · <a href="https://youtu.be/lWkN4CYJzeY" target="_blank" rel="noopener"><!-- TODO: Ep.03 URL -->Ep.03</a>
+      · <a href="https://youtu.be/2o4DQlfseJE" target="_blank" rel="noopener"><!-- TODO: Ep.04 URL -->Ep.04</a>
+    </li>
+
+    <!-- Batch 3 -->
+    <li class="item">
+      <span class="title">Batch 3 — Letters to Christian World & Declaration (Ep.05, 06, 11)</span>
+      — <a href="https://youtu.be/CChiJ5zqBUE" target="_blank" rel="noopener"><!-- TODO: Ep.05 URL -->Ep.05</a>
+      · <a href="https://youtu.be/dUE4oor84dI" target="_blank" rel="noopener"><!-- TODO: Ep.06 URL -->Ep.06</a>
+      · <a href="https://youtu.be/rLPyRIOK8AA" target="_blank" rel="noopener"><!-- TODO: Ep.11 URL -->Ep.11</a>
+    </li>
+
+    <!-- Batch 4 -->
+    <li class="item">
+      <span class="title">Batch 4 — What is the Afterlife? Redefined (Ep.07, 09, 14)</span>
+      — <a href="https://youtu.be/RJLy0bdgQoQ" target="_blank" rel="noopener"><!-- TODO: Ep.07 URL -->Ep.07</a>
+      · <a href="https://youtu.be/v9fF42xvwWE" target="_blank" rel="noopener"><!-- TODO: Ep.09 URL -->Ep.09</a>
+      · <a href="https://youtu.be/X9QygC6bXqE" target="_blank" rel="noopener"><!-- TODO: Ep.14 URL -->Ep.14</a>
+    </li>
+
+    <!-- Batch 5 -->
+    <li class="item">
+      <span class="title">Batch 5 — Nosome, ENZ & Godhood (Ep.08, 10)</span>
+      — <a href="https://youtu.be/NmZ9FxixN48" target="_blank" rel="noopener"><!-- TODO: Ep.08 URL -->Ep.08</a>
+      · <a href="https://youtu.be/uTzE24vYqco" target="_blank" rel="noopener"><!-- TODO: Ep.10 URL -->Ep.10</a>
+    </li>
+
+    <!-- Batch 6 (already linked) -->
+    <li class="item">
+      <span class="title">Batch 6 — Yahweh vs. Jesus’ God(hood) / Tithe (Ep.12–13)</span>
+      — <a href="https://youtu.be/4zlMaEBqaNU" target="_blank" rel="noopener">Ep.12</a>
+      · <a href="https://youtu.be/gMURqKiDlEk" target="_blank" rel="noopener">Ep.13</a>
+    </li>
+
+    <!-- Batch 7 (already linked) -->
+    <li class="item">
+      <span class="title">Batch 7 — Exodus & David–Solomon Myth Deconstruction (Ep.15–16)</span>
+      — <a href="https://youtu.be/7tGGKBsqghk" target="_blank" rel="noopener">Ep.15</a>
+      · <a href="https://youtu.be/WiTOupqxrfw" target="_blank" rel="noopener">Ep.16</a>
+    </li>
+
+  </ul>
+
+  <div class="btn-row" style="margin-top:8px">
+    <a class="btn" href="https://www.youtube.com/@BYKIM-c2s" target="_blank" rel="noopener">Visit full channel</a>
+  </div>
+</section>
+   
     <footer>
-      Last updated: <span id="ts"></span>
+      © BY Kim · New Consilience Group (NCG)
+      <span class="right">Last updated: <span id="ts"></span></span>
     </footer>
   </div>
 
+  <script>
+    // Write YYYY-MM-DD automatically
+    const d=new Date();
+    const z=n=>String(n).padStart(2,'0');
+    document.getElementById('ts').textContent =
+      `${d.getFullYear()}-${z(d.getMonth()+1)}-${z(d.getDate())}`;
+  </script>
+ 
 <script>
-  // 하단 날짜 자동 표기 (YYYY-MM-DD)
-  const d=new Date(), z=n=>String(n).padStart(2,'0');
-  document.getElementById('ts').textContent =
-    `${d.getFullYear()}-${z(d.getMonth()+1)}-${z(d.getDate())}`;
+(function () {
+  var isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  if (!isMobile) return;
+
+  // 모바일은 PDF를 다운로드 대신 브라우저 뷰어(PDF.js)로 열기
+  ['trilogyLink', 'reviewSzn', 'reviewOneness'].forEach(function (id) {
+    var a = document.getElementById(id);
+    if (!a) return;
+
+    // 상대경로 → 절대경로
+    var abs = new URL(a.getAttribute('href'), location.href).href;
+
+    // Mozilla PDF.js 뷰어 URL
+    var viewer = 'https://mozilla.github.io/pdf.js/web/viewer.html?file=' +
+                 encodeURIComponent(abs);
+
+    // 링크를 뷰어로 교체
+    a.setAttribute('href', viewer);
+    a.setAttribute('target', '_self');   // 같은 탭에서 열기(전환 안정적)
+    a.removeAttribute('download');       // 혹시 있을 강제 다운로드 방지
+  });
+})();
 </script>
+  
 </body>
 </html>
