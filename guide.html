@@ -63,19 +63,63 @@
    /* (선택) PDF 버튼 묶음 레이아웃 보완 */
     .pdfs { display:flex; flex-wrap:wrap; gap:8px; margin-top:8px; }
     .pdfs .btn { display:inline-block; }
+
+    /* === CTA Buttons (Series Guide & Main Page) === */
+.hero-cta {
+  margin: 20px 0 30px;
+  text-align: center;
+}
+.btn-cta {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 10px;
+  background: #2b6cb0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+  transition: background 0.2s;
+}
+.btn-cta:hover {
+  background: #2c5282;
+}
+.cta-sub {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: #b7c7e6;
+}
   </style>
 </head>
 <body>
   <header>
-    <div class="wrap">
-      <h1>NCG Series — English Guide <span class="badge">(Batch 1-7)</span></h1>
-      <small>BY Kim · New Consilience Group (NCG)</small>
-    </div>
-  </header>
+   <div class="wrap">
+  <h1>NCG Series – English Guide <span class="badge">(Batch 1–7)</span></h1>
+  <small>BY Kim · New Consilience Group (NCG)</small>
+
+  <!-- 🔷 Series Main Button -->
+  <div class="hero-cta">
+    <a class="btn-cta" href="https://bykim5710.github.io/series/">📺 Go to English Series Main Page</a>
+    <div class="cta-sub">Explore videos, PDFs, and detailed guides of the Religious Revolution Series</div>
+  </div>
+</div> <!-- 🔸 이 한 줄이 wrap 닫기 -->
+</header>
 
   <div class="wrap">
 
-   <!-- Press Materials -->
+<!-- 🔷 View Series Guide Button -->
+<div class="hero-cta" style="text-align:center; margin-bottom:30px;">
+  <a href="https://bykim5710.github.io/NCG_Series_Guide_EN/guide.html"
+     class="btn-cta"
+     style="display:inline-block; padding:10px 18px; border-radius:8px; background:#3ea6ff; color:#fff; font-weight:700; text-decoration:none;">
+     View Series Guide
+  </a>
+  <div class="cta-sub" style="margin-top:8px; opacity:.8;">
+    Access the full English guide to videos, PDFs, and press materials.
+  </div>
+</div>
+    
+    <!-- Press Materials -->
 <section class="card" id="press">
   
   <ul class="clean">
@@ -88,6 +132,7 @@
     </li>
   </ul>
 </section>
+</div>    
 
     <!-- Reviews -->
 <span id="endorsements"></span>  <!-- 예전 링크 호환용, 눈에 보이지 않음 -->
