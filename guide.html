@@ -30,12 +30,11 @@
     }
     .wrap{max-width:980px; margin:28px auto; padding:0 16px}
 
-    /* Hero */
-    header{background:var(--accent); color:#fff; padding:26px 0; text-align:center}
-    header h1{margin:0; font-size:clamp(22px,3.2vw,30px)}
-    header small{display:block; margin-top:6px; opacity:.95}
-    .badge{display:inline-block; padding:6px 10px; border-radius:8px; background:var(--chip); color:var(--chipText); font-weight:600; margin-left:8px}
-
+    /* Hero (Compact Header) */
+    header{background:var(--accent); color:#fff; padding:14px 0; /* ✅ 기존 26px → 14px */ text-align:center;}
+    header h1{margin:0; font-size:clamp(18px,2.4vw,26px);  /* ✅ 글씨 약간 줄임 */}
+    header small{display:block; margin-top:4px; opacity:.9;}
+    
     /* Cards */
     section.card{
       background:var(--panel); border-radius:12px; padding:20px; margin-top:22px;
@@ -53,14 +52,19 @@
     ul.clean{padding-left:18px; margin:10px 0} ul.clean li{margin:6px 0}
 
     /* CTA (top) */
-    .hero-cta{margin:20px 0 6px; text-align:center}
-    .btn-cta{
-      display:inline-block; padding:12px 22px; border-radius:10px; background:#2b6cb0;
-      color:#fff; font-weight:700; font-size:1.05rem; text-decoration:none;
-      box-shadow:0 4px 14px rgba(0,0,0,0.15); transition:background .2s
-    }
-    .btn-cta:hover{background:#2c5282}
-    .cta-sub{margin-top:8px; font-size:.95rem; color:#b7c7e6}
+ /* Minimal Compact Header */
+header { background: var(--accent); color: #fff; padding: 12px 0; text-align: center; }
+header h1 { margin: 0; font-size: clamp(18px, 2.3vw, 26px); }
+header small { display: inline-block; margin-top: 4px; opacity: .9; }
+
+/* 버튼 */
+.hero-cta { margin: 10px 0 6px; text-align:center; }
+.btn-cta {
+  display:inline-block; padding:10px 16px; border-radius:8px;
+  background:#2b6cb0; color:#fff; font-weight:700; font-size:.95rem;
+  text-decoration:none; box-shadow:0 4px 10px rgba(0,0,0,.12); transition:background .2s;
+}
+.btn-cta:hover { background:#2c5282; }
 
     footer{margin:36px 0 24px; text-align:center; color:var(--muted)}
     .right{float:right; color:var(--muted)}
@@ -75,31 +79,22 @@
         NCG Series — English Guide <span class="badge">(Batch 1–7)</span>
       </h1>
       <small>BY Kim · New Consilience Group (NCG)</small>
-
-      <div class="hero-cta">
-        <a class="btn-cta" href="https://bykim5710.github.io/series/">📺 Go to English Series Main Page</a>
-        <div class="cta-sub">Explore videos, PDFs, and detailed guides of the Religious Revolution Series.</div>
-      </div>
     </div>
   </header>
 
   <div class="wrap">
 
-    <!-- PRESS MATERIALS -->
-    <section class="card" id="press">
-      <div class="title">Press Materials</div>
-      <p class="lead">Download the author’s trilogy overview and profile.</p>
-      <ul class="clean">
-        <li class="item">
-          <span class="title">NCG Press Trilogy (EN)</span>
-          <div class="btn-row" style="margin-top:8px">
-            <a id="trilogyLink" class="btn" href="./religious-revolution-trilogy_en.pdf" target="_blank" rel="noopener">
-              Author’s Trilogy & Profile (PDF)
-            </a>
-          </div>
-        </li>
-      </ul>
-    </section>
+    <!-- PRESS MATERIALS (Compact Version) -->
+<section id="press" style="text-align:center; margin:30px 0;">
+  <a id="trilogyLink"
+     href="./religious-revolution-trilogy_en.pdf"
+     target="_blank"
+     rel="noopener"
+     class="btn"
+     style="background: var(--btn); color: #fff; border-radius: 10px; padding: 12px 24px; text-decoration: none; font-weight: 700;">
+    Author’s Trilogy & Profile (PDF)
+  </a>
+</section>
 
     <!-- REVIEWS -->
     <section class="card" id="reviews">
