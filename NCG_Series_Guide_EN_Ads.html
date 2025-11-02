@@ -3,63 +3,97 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NCG Series — Advertising & Release Sets (1–7)</title>
+
+  <title>NCG Series — Advertising Sets (Ep.01–16 Overview)</title>
+
+  <!-- Open Graph / Facebook / Kakao preview -->
+  <meta property="og:url" content="https://bykim5710.github.io/NCG_Series_Guide_EN/NCG_Series_Guide_EN_Ads.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="NCG Religious Revolution Series — Advertising Sets (Ep.01–16)" />
+  <meta property="og:description" content="Seven themed ad sets introducing BY Kim, NCG, Nosome, Afterlife, Yahweh vs. Jesus, and the historical deconstruction of Exodus and David-Solomon." />
+  <meta property="og:image" content="https://bykim5710.github.io/NCG_Series_Guide_EN/og-default.jpg" />
+  <meta property="og:image:type" content="image/jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="NCG Series / Religious Revolution" />
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="NCG Religious Revolution Series — Advertising Sets" />
+  <meta name="twitter:description" content="Curated episode groups (Ep.01–16) for outreach and ads." />
+  <meta name="twitter:image" content="https://bykim5710.github.io/NCG_Series_Guide_EN/og-default.jpg" />
+  <meta name="twitter:url" content="https://bykim5710.github.io/NCG_Series_Guide_EN/NCG_Series_Guide_EN_Ads.html" />
 
   <style>
     :root {
       --bg:#0d1117;
-      --panel:#111827;
+      --panel:#0f172a;
       --border:#1e293b;
       --text:#e6edf3;
-      --muted:#9aa3b2;
+      --muted:#a3b3c4;
       --accent:#3b82f6;
     }
+
+    * { box-sizing:border-box; }
     body {
-      margin:0; padding:40px 20px; background:var(--bg);
-      color:var(--text); font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-      line-height:1.6;
+      margin:0;
+      padding:24px;
+      background:var(--bg);
+      color:var(--text);
+      font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      line-height:1.5;
+      font-size:16px;
     }
+
+    header.hero {
+      background:linear-gradient(
+        to bottom right,
+        rgba(59,130,246,0.9),
+        rgba(59,130,246,0.5)
+      );
+      border-radius:12px;
+      padding:20px 24px;
+      border:1px solid rgba(255,255,255,0.15);
+      max-width:900px;
+      margin:0 auto 24px auto;
+      box-shadow:0 12px 24px rgba(0,0,0,0.6);
+      text-align:center;
+    }
+    header.hero h1 {
+      margin:0 0 8px 0;
+      font-size:1.25rem;
+      font-weight:600;
+      color:#fff;
+      line-height:1.4;
+    }
+    header.hero p {
+      margin:0;
+      font-size:0.95rem;
+      color:#e9eeff;
+      line-height:1.4;
+    }
+
     main.wrap {
-      max-width:900px; margin:0 auto;
+      max-width:900px;
+      margin:0 auto;
     }
-    h1 {
-      text-align:center; color:#fff; margin-bottom:6px;
-    }
-    p.subtitle {
-      text-align:center; color:var(--muted); margin-bottom:36px;
-    }
-    h2 {
-      margin-top:36px; margin-bottom:6px; color:#fff;
-      font-size:1.15rem; border-left:4px solid var(--accent);
-      padding-left:10px;
-    }
-    p.lead {
-      color:var(--muted); font-size:0.95rem; margin:4px 0 14px 0;
-    }
-    ul.items { list-style:none; padding:0; margin:0 0 12px 0; }
-    li.item {
+
+    section.set {
       background:var(--panel);
       border:1px solid var(--border);
-      border-radius:8px;
-      padding:10px 14px;
-      margin-bottom:6px;
-      display:flex; justify-content:space-between; align-items:center;
-      flex-wrap:wrap; gap:6px;
+      border-radius:12px;
+      padding:20px 24px;
+      margin-bottom:20px;
     }
-    .btn {
-      background:var(--accent); color:#fff;
-      border:none; border-radius:6px;
-      padding:6px 12px;
-      text-decoration:none;
-      font-size:0.9rem; font-weight:600;
-    }
-    .btn.secondary {
-      background:#1e293b;
+
+    section.set h2 {
+      margin:0 0 8px 0;
+      font-size:1rem;
+      font-weight:600;
       color:var(--text);
-      border:1px solid var(--border);
+      line-height:1.4;
     }
-    .btn:hover { opacity:0.9; }
-    .pdfs { display:flex; flex-wrap:wrap; gap:8px; margin-top:8px; }
+
     .chip {
       background:var(--accent);
       color:#fff;
@@ -68,99 +102,221 @@
       border-radius:4px;
       margin-left:6px;
     }
+
+    p.lead {
+      margin:0 0 12px 0;
+      font-size:0.9rem;
+      color:var(--muted);
+      line-height:1.4;
+    }
+
+    ul.items {
+      list-style:none;
+      margin:0;
+      padding:0;
+    }
+    li.item {
+      background:rgba(30,41,59,0.6);
+      border:1px solid var(--border);
+      border-radius:8px;
+      padding:12px 16px;
+      margin-bottom:8px;
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      font-size:0.9rem;
+      line-height:1.4;
+    }
+    .title {
+      color:var(--text);
+      font-weight:500;
+    }
+    a.btn {
+      display:inline-block;
+      background:#1e293b;
+      color:#fff;
+      font-weight:600;
+      text-decoration:none;
+      border:1px solid #334155;
+      border-radius:6px;
+      padding:8px 12px;
+      font-size:0.85rem;
+    }
+    a.btn:hover {
+      background:#111827;
+      border-color:#475569;
+    }
+
+    /* Bottom link buttons ("View Full Series Guide", "Back to Main") */
+    .nav-links {
+      text-align:center;
+      margin:30px 0;
+    }
+    .nav-links a.btn {
+      margin:6px;
+      padding:8px 14px;
+      font-size:0.95rem;
+    }
+
     footer {
       text-align:center;
       color:var(--muted);
       font-size:0.8rem;
       margin:40px 0 10px 0;
     }
+
+    @media(max-width:480px){
+      body { padding:16px; font-size:15px; }
+      header.hero { padding:16px; }
+      header.hero h1 { font-size:1.15rem; }
+    }
   </style>
 </head>
 
 <body>
+  <header class="hero">
+    <h1>NCG Religious Revolution Series — Advertising Sets</h1>
+    <p>Seven themed outreach bundles (Ep.01–16), for international promotion and audience targeting.</p>
+  </header>
+
   <main class="wrap">
-    <h1>NCG Religious Revolution Series — Advertising & Release Sets</h1>
-    <p class="subtitle">Structured campaign overview (Sets 1–7) for YouTube, Facebook, and outreach materials.</p>
 
     <!-- Set 1 -->
     <section class="set" id="set1">
-      <h2>Set 1 — Author & NCG Introduction <span class="chip">Ep. 01</span></h2>
-      <p class="lead">Intro to the author’s trilogy and the NCG vision. Includes PDFs 00 & 01 (<em>Conversation with Oneness God</em>), plus additional book intros & endorsements for “Soul & Zero” and “Nosome”.</p>
-
+      <h2>Set 1 — Author &amp; NCG Introduction <span class="chip">Ep.01</span></h2>
+      <p class="lead">
+        Intro to the author’s trilogy and the NCG vision. Includes “Author’s Trilogy and Profile”.
+      </p>
       <ul class="items">
         <li class="item">
-          <span class="title">Ep. 1 — Introduction of BY Kim and NCG</span>
+          <span class="title">Ep.1 — Introduction of BY Kim and NCG</span>
           <a class="btn" href="https://youtu.be/xqgxrhM1r24" target="_blank" rel="noopener">▶ YouTube</a>
         </li>
       </ul>
 
-      <div class="pdfs">
-        <a class="btn secondary" href="./religious-revolution-trilogy_en.pdf" target="_blank" rel="noopener">📄 Author’s Trilogy and Profile</a>
+      <div class="items">
+        <div class="item" style="justify-content:flex-start;">
+          <span class="title">📄 Author’s Trilogy and Profile (PDF)</span>
+          <a class="btn" href="./religious-revolution-trilogy_en.pdf" target="_blank" rel="noopener">Open PDF</a>
+        </div>
       </div>
     </section>
 
     <!-- Set 2 -->
     <section class="set" id="set2">
-      <h2>Set 2 — Why Do We Need a Religious Revolution? <span class="chip">Ep. 02–04</span></h2>
-      <p class="lead">Beyond the Reformation: returning to the essence of truth and love.</p>
+      <h2>Set 2 — Why Do We Need a Religious Revolution? <span class="chip">Ep.02–04</span></h2>
+      <p class="lead">Why beyond the Reformation; back to the basics of truth and love.</p>
       <ul class="items">
-        <li class="item"><span class="title">Ep. 2 — Religious Revolution and Christian Democracy</span><a class="btn" href="https://youtu.be/IniMUGC3T9Q" target="_blank" rel="noopener">▶ YouTube</a></li>
-        <li class="item"><span class="title">Ep. 3 — Beyond the Reformation</span><a class="btn" href="https://youtu.be/lWkN4CYJzeY" target="_blank" rel="noopener">▶ YouTube</a></li>
-        <li class="item"><span class="title">Ep. 4 — Back to the Basics</span><a class="btn" href="https://youtu.be/2o4DQlfseJE" target="_blank" rel="noopener">▶ YouTube</a></li>
+        <li class="item">
+          <span class="title">Ep.2 — Why do we need Religious Revolution — Christian Democracy</span>
+          <a class="btn" href="https://youtu.be/IniMUGC3T9Q" target="_blank" rel="noopener">▶ YouTube</a>
+        </li>
+        <li class="item">
+          <span class="title">Ep.3 — Why a Religious Revolution beyond the Reformation</span>
+          <a class="btn" href="https://youtu.be/lWkN4CYJzeY" target="_blank" rel="noopener">▶ YouTube</a>
+        </li>
+        <li class="item">
+          <span class="title">Ep.4 — Why a Religious Revolution — Back to the Basics</span>
+          <a class="btn" href="https://youtu.be/2o4DQlfseJE" target="_blank" rel="noopener">▶ YouTube</a>
+        </li>
       </ul>
     </section>
 
     <!-- Set 3 -->
     <section class="set" id="set3">
-      <h2>Set 3 — Letters to Christianity & Declaration <span class="chip">Ep. 05, 06, 11</span></h2>
-      <p class="lead">Letters to the Christian world, the formal Declaration of the Religious Revolution, and the “Ten Rebuttals” trailer.</p>
+      <h2>Set 3 — Letters to Christianity &amp; Declaration <span class="chip">Ep.05, 06, 11</span></h2>
+      <p class="lead">Letters to the Christian world; declaration of the Religious Revolution; ten rebuttals intro.</p>
       <ul class="items">
-        <li class="item"><span class="title">Ep. 5 — Letters Sent to Christianity World</span><a class="btn" href="https://youtu.be/CChiJ5zqBUE" target="_blank" rel="noopener">▶ YouTube</a></li>
-        <li class="item"><span class="title">Ep. 6 — Declaration of Religious Revolution</span><a class="btn" href="https://youtu.be/dUE4oor84dI" target="_blank" rel="noopener">▶ YouTube</a></li>
-        <li class="item"><span class="title">Ep. 11 — Rebuttal to Roman Curia and Christianity</span><a class="btn" href="https://youtu.be/ROc29mrzC8w" target="_blank" rel="noopener">▶ YouTube</a></li>
+        <li class="item">
+          <span class="title">Ep.5 — Letters sent to the Christianity World</span>
+          <a class="btn" href="https://youtu.be/CChiJ5zqBUE" target="_blank" rel="noopener">▶ YouTube</a>
+        </li>
+        <li class="item">
+          <span class="title">Ep.6 — Declaration of Religious Revolution</span>
+          <a class="btn" href="https://youtu.be/dUE4oor84dI" target="_blank" rel="noopener">▶ YouTube</a>
+        </li>
+        <li class="item">
+          <span class="title">Ep.11 — Rebuttal to Roman Curia and Christianity</span>
+          <a class="btn" href="https://youtu.be/ROc29mrzC8w" target="_blank" rel="noopener">▶ YouTube</a>
+        </li>
       </ul>
     </section>
 
     <!-- Set 4 -->
     <section class="set" id="set4">
-      <h2>Set 4 — What Is the Afterlife? Redefining It <span class="chip">Ep. 07, 09, 14</span></h2>
+      <h2>Set 4 — What Is the Afterlife? Redefining It <span class="chip">Ep.07, 09, 14</span></h2>
       <p class="lead">From myth to science-informed philosophy: afterlife vs. transmigration field.</p>
       <ul class="items">
-        <li class="item"><span class="title">Ep. 7 — Nosome and Transmigration</span><a class="btn" href="https://youtu.be/RJLy0bdgQoQ" target="_blank" rel="noopener">▶ YouTube</a></li>
-        <li class="item"><span class="title">Ep. 9 — Afterlife vs. Transmigration Field</span><a class="btn" href="https://youtu.be/v9fF42xvwWE" target="_blank" rel="noopener">▶ YouTube</a></li>
-        <li class="item"><span class="title">Ep. 14 — The Afterlife</span><a class="btn" href="https://youtu.be/X9QygC6bXqE" target="_blank" rel="noopener">▶ YouTube</a></li>
+        <li class="item">
+          <span class="title">Ep.7 — Nosome and Transmigration</span>
+          <a class="btn" href="https://youtu.be/RJLy0bdgQoQ" target="_blank" rel="noopener">▶ YouTube</a>
+        </li>
+        <li class="item">
+          <span class="title">Ep.9 — Afterlife vs. Transmigration Field</span>
+          <a class="btn" href="https://youtu.be/v9fF42xvwWE" target="_blank" rel="noopener">▶ YouTube</a>
+        </li>
+        <li class="item">
+          <span class="title">Ep.14 — The Afterlife</span>
+          <a class="btn" href="https://youtu.be/X9QygC6bXqE" target="_blank" rel="noopener">▶ YouTube</a>
+        </li>
       </ul>
     </section>
 
     <!-- Set 5 -->
     <section class="set" id="set5">
-      <h2>Set 5 — Nosome, Gong–Mu–Young, and Godhood <span class="chip">Ep. 08, 10</span></h2>
-      <p class="lead">ENZ structure: Nosome & Quark as the scientific base of Buddhahood, Godhood and Heavenhood.</p>
+      <h2>Set 5 — Nosome, Gong–Mu–Young, and Godhood <span class="chip">Ep.08, 10</span></h2>
+      <p class="lead">ENZ structure: Nosome &amp; Quark as the base of Buddhahood, Godhood and Heavenhood.</p>
       <ul class="items">
-        <li class="item"><span class="title">Ep. 8 — ENZ: Nosome and Quark</span><a class="btn" href="https://youtu.be/NmZ9FxixN48" target="_blank" rel="noopener">▶ YouTube</a></li>
-        <li class="item"><span class="title">Ep. 10 — Oneness</span><a class="btn" href="https://youtu.be/uTzE24vYqco" target="_blank" rel="noopener">▶ YouTube</a></li>
+        <li class="item">
+          <span class="title">Ep.8 — ENZ: Nosome and Quark</span>
+          <a class="btn" href="https://youtu.be/NmZ9FxixN48" target="_blank" rel="noopener">▶ YouTube</a>
+        </li>
+        <li class="item">
+          <span class="title">Ep.10 — Oneness</span>
+          <a class="btn" href="https://youtu.be/uTzE24vYqco" target="_blank" rel="noopener">▶ YouTube</a>
+        </li>
       </ul>
     </section>
 
     <!-- Set 6 -->
     <section class="set" id="set6">
-      <h2>Set 6 — Yahweh & the Tithe <span class="chip">Ep. 12–13</span></h2>
-      <p class="lead">Theological and historical critique of Yahweh vs. Jesus’ Godhood and the tithe doctrine.</p>
+      <h2>Set 6 — Yahweh &amp; the Tithe <span class="chip">Ep.12–13</span></h2>
+      <p class="lead">Theological and historical critique of Yahweh vs. Jesus’ Godhood, and the tithe doctrine.</p>
       <ul class="items">
-        <li class="item"><span class="title">Ep. 12 — Yahweh vs. Jesus’ God(hood)</span><a class="btn" href="https://youtu.be/4zlMaEBqaNU" target="_blank" rel="noopener">▶ YouTube</a></li>
-        <li class="item"><span class="title">Ep. 13 — Tithe</span><a class="btn" href="https://youtu.be/gMURqKiDlEk" target="_blank" rel="noopener">▶ YouTube</a></li>
+        <li class="item">
+          <span class="title">Ep.12 — Yahweh vs. Jesus’ God(hood)</span>
+          <a class="btn" href="https://youtu.be/4z1MaEBgaNU" target="_blank" rel="noopener">▶ YouTube</a>
+        </li>
+        <li class="item">
+          <span class="title">Ep.13 — Tithe</span>
+          <a class="btn" href="https://youtu.be/gMURqKiDlEk" target="_blank" rel="noopener">▶ YouTube</a>
+        </li>
       </ul>
     </section>
 
     <!-- Set 7 -->
     <section class="set" id="set7">
-      <h2>Set 7 — Exodus & the Myth of David–Solomon Empire <span class="chip">Ep. 15–16</span></h2>
+      <h2>Set 7 — Exodus &amp; the Myth of David–Solomon Empire <span class="chip">Ep.15–16</span></h2>
       <p class="lead">Historical deconstruction: Exodus never happened; the David–Solomon “empire” as later myth-making.</p>
       <ul class="items">
-        <li class="item"><span class="title">Ep. 15 — Moses’ Exodus</span><a class="btn" href="https://youtu.be/7tGGKBsqghk" target="_blank" rel="noopener">▶ YouTube</a></li>
-        <li class="item"><span class="title">Ep. 16 — Illusion of David and Solomon’s Empire</span><a class="btn" href="https://youtu.be/WiTOupqxrfw" target="_blank" rel="noopener">▶ YouTube</a></li>
+        <li class="item">
+          <span class="title">Ep.15 — Moses’ Exodus</span>
+          <a class="btn" href="https://youtu.be/7tGGKBsqghk" target="_blank" rel="noopener">▶ YouTube</a>
+        </li>
+        <li class="item">
+          <span class="title">Ep.16 — Illusion of David and Solomon’s Empire</span>
+          <a class="btn" href="https://youtu.be/WiTOUpqqxfw" target="_blank" rel="noopener">▶ YouTube</a>
+        </li>
       </ul>
     </section>
+
+    <!-- bottom nav buttons -->
+    <div class="nav-links">
+      <a class="btn" href="./guide.html" target="_blank" rel="noopener">📘 View Full Series Guide</a>
+      <a class="btn" href="./index.html" target="_blank" rel="noopener">🏠 Back to Main Page</a>
+    </div>
 
     <footer>
       © <span id="year"></span> Byung Youn Kim, Chairman of the New Consilience Group (NCG). All rights reserved.
