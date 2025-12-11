@@ -7,7 +7,7 @@
   <title>NCG Series — English Guide (Batch 1–7)</title>
 
   <!-- Canonical / Robots / Theme -->
-  <link rel="canonical" href="https://bykim5710.github.io/series/">
+  <link rel="canonical" href="https://bykim5710.github.io/NCG_Series_Guide_EN/guide.html">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#0d1117">
   <meta name="author" content="BY Kim · New Consilience Group (NCG)">
@@ -18,8 +18,8 @@
   <meta property="og:site_name" content="NCG Series – English Guide" />
   <meta property="og:title" content="NCG Series — English Guide (Batch 1–7)" />
   <meta property="og:description" content="Explore videos, PDFs, and thematic guides with author endorsements from the Religious Revolution Series." />
-  <meta property="og:url" content="https://bykim5710.github.io/series/" />
-  <!-- 아래 이미지가 실제 존재해야 합니다. 필요시 원하는 이미지 URL로 교체 -->
+  <meta property="og:url" content="https://bykim5710.github.io/NCG_Series_Guide_EN/guide.html" />
+  <!-- 아래 이미지는 실제 존재하는 이미지로 교체 가능합니다 -->
   <meta property="og:image" content="https://bykim5710.github.io/NCG_Series_Guide_EN/og-default.jpg" />
 
   <!-- Twitter -->
@@ -83,7 +83,7 @@
     <!-- PRESS MATERIALS (Compact Version) -->
     <section id="press" style="text-align:center; margin:30px 0;">
       <a id="trilogyLink"
-        href="./religious-revolution-trilogy_en.pdf"
+        href="https://bykim5710.github.io/NCG_Series_Guide_EN/religious-revolution-trilogy_en.pdf"
         target="_blank"
         rel="noopener"
         class="btn"
@@ -100,7 +100,9 @@
         <b>Soul &amp; Zero — Excerpt</b><br/>
         “The author is fearless in dealing with religious themes and offers an unflinching perspective.”
         <div class="btn-row" style="margin-top:8px">
-          <a id="reviewSzn" class="btn" href="./soul-and-zero-review_en.pdf" target="_blank" rel="noopener">
+          <a id="reviewSzn" class="btn"
+             href="https://bykim5710.github.io/NCG_Series_Guide_EN/soul-and-zero-review_en.pdf"
+             target="_blank" rel="noopener">
             Read full review (PDF)
           </a>
         </div>
@@ -110,7 +112,9 @@
         <b>Conversation with Oneness God — Excerpt</b><br/>
         “With the diligence of someone who read <i>Das Kapital</i>, the author analyzes the Bible with ardor.”
         <div class="btn-row" style="margin-top:8px">
-          <a id="reviewOneness" class="btn" href="./oneness-god-review_en.pdf" target="_blank" rel="noopener">
+          <a id="reviewOneness" class="btn"
+             href="https://bykim5710.github.io/NCG_Series_Guide_EN/oneness-god-review_en.pdf"
+             target="_blank" rel="noopener">
             Read full review (PDF)
           </a>
         </div>
@@ -181,25 +185,10 @@
 
   <!-- Auto date -->
   <script>
-    const d=new Date(), z=n=>String(n).padStart(2,'0');
+    const d = new Date(), z = n => String(n).padStart(2,'0');
     document.getElementById('ts').textContent =
       `${d.getFullYear()}-${z(d.getMonth()+1)}-${z(d.getDate())}`;
   </script>
 
-  <!-- Mobile PDF viewer (open in-tab) -->
-  <script>
-  (function () {
-    var isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-    if (!isMobile) return;
-    ['trilogyLink','reviewSzn','reviewOneness'].forEach(function (id) {
-      var a = document.getElementById(id); if (!a) return;
-      var abs = new URL(a.getAttribute('href'), location.href).href;
-      var viewer = 'https://mozilla.github.io/pdf.js/web/viewer.html?file=' + encodeURIComponent(abs);
-      a.setAttribute('href', viewer);
-      a.setAttribute('target', '_self');
-      a.removeAttribute('download');
-    });
-  })();
-  </script>
 </body>
 </html>
